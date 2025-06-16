@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  lob:
+    command: bash
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    volumes:
+      - .:/app
+    working_dir: /app
+    tty: true
