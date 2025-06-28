@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /app
+CMAKE_SOURCE_DIR = /workspaces/limit-order-book-simulator
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /app/build
+CMAKE_BINARY_DIR = /workspaces/limit-order-book-simulator/build
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/lob_simulator.dir/clean
 CMakeFiles/lob_simulator.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lob_simulator.dir/build.make CMakeFiles/lob_simulator.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lob_simulator.dir/build.make CMakeFiles/lob_simulator.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/app/build/CMakeFiles --progress-num=1,2 "Built target lob_simulator"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/workspaces/limit-order-book-simulator/build/CMakeFiles --progress-num=1,2 "Built target lob_simulator"
 .PHONY : CMakeFiles/lob_simulator.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lob_simulator.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /app/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/limit-order-book-simulator/build/CMakeFiles 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lob_simulator.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /app/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /workspaces/limit-order-book-simulator/build/CMakeFiles 0
 .PHONY : CMakeFiles/lob_simulator.dir/rule
 
 # Convenience name for target.

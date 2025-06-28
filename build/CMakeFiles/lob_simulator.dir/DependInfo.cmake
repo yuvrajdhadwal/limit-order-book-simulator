@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/app/src/main.cpp" "CMakeFiles/lob_simulator.dir/src/main.cpp.o" "gcc" "CMakeFiles/lob_simulator.dir/src/main.cpp.o.d"
+  "/workspaces/limit-order-book-simulator/src/main.cpp" "CMakeFiles/lob_simulator.dir/src/main.cpp.o" "gcc" "CMakeFiles/lob_simulator.dir/src/main.cpp.o.d"
   )
 
 # Targets to which this target links.
