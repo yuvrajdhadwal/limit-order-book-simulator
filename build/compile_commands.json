@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/workspaces/limit-order-book-simulator/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -o CMakeFiles/simulator.dir/src/main.cpp.o -c /workspaces/limit-order-book-simulator/src/main.cpp",
+  "file": "/workspaces/limit-order-book-simulator/src/main.cpp"
+},
+{
+  "directory": "/workspaces/limit-order-book-simulator/build",
+  "command": "/usr/bin/clang++   -g -std=gnu++17 -o CMakeFiles/simulator.dir/src/MatchingEngine.cpp.o -c /workspaces/limit-order-book-simulator/src/MatchingEngine.cpp",
+  "file": "/workspaces/limit-order-book-simulator/src/MatchingEngine.cpp"
+}
+]

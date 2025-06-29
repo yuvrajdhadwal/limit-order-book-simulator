@@ -10,6 +10,6 @@
         "ms-vscode.cpptools",
         "ms-vscode.cmake-tools"
     ],
-    "postCreateCommand": "mkdir -p build && cd build && cmake .. & make",
+    "postCreateCommand": "mkdir -p build && cd build && cmake .. && make && chmod +x lob_simulator",
     "remoteUser": "root"
 }

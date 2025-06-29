@@ -117,24 +117,48 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lob_simulator
+# Target rules for targets named simulator
 
 # Build rule for target.
-lob_simulator: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lob_simulator
-.PHONY : lob_simulator
+simulator: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 simulator
+.PHONY : simulator
 
 # fast build rule for target.
-lob_simulator/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lob_simulator.dir/build.make CMakeFiles/lob_simulator.dir/build
-.PHONY : lob_simulator/fast
+simulator/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/build
+.PHONY : simulator/fast
+
+src/MatchingEngine.o: src/MatchingEngine.cpp.o
+.PHONY : src/MatchingEngine.o
+
+# target to build an object file
+src/MatchingEngine.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/MatchingEngine.cpp.o
+.PHONY : src/MatchingEngine.cpp.o
+
+src/MatchingEngine.i: src/MatchingEngine.cpp.i
+.PHONY : src/MatchingEngine.i
+
+# target to preprocess a source file
+src/MatchingEngine.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/MatchingEngine.cpp.i
+.PHONY : src/MatchingEngine.cpp.i
+
+src/MatchingEngine.s: src/MatchingEngine.cpp.s
+.PHONY : src/MatchingEngine.s
+
+# target to generate assembly for a file
+src/MatchingEngine.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/MatchingEngine.cpp.s
+.PHONY : src/MatchingEngine.cpp.s
 
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
 # target to build an object file
 src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lob_simulator.dir/build.make CMakeFiles/lob_simulator.dir/src/main.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/main.cpp.o
 .PHONY : src/main.cpp.o
 
 src/main.i: src/main.cpp.i
@@ -142,7 +166,7 @@ src/main.i: src/main.cpp.i
 
 # target to preprocess a source file
 src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lob_simulator.dir/build.make CMakeFiles/lob_simulator.dir/src/main.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/main.cpp.i
 .PHONY : src/main.cpp.i
 
 src/main.s: src/main.cpp.s
@@ -150,7 +174,7 @@ src/main.s: src/main.cpp.s
 
 # target to generate assembly for a file
 src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lob_simulator.dir/build.make CMakeFiles/lob_simulator.dir/src/main.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/simulator.dir/build.make CMakeFiles/simulator.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
 # Help Target
@@ -161,7 +185,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... lob_simulator"
+	@echo "... simulator"
+	@echo "... src/MatchingEngine.o"
+	@echo "... src/MatchingEngine.i"
+	@echo "... src/MatchingEngine.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
